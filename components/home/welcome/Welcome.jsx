@@ -16,6 +16,23 @@ const Welcome = () => {
         <Text style={styles.userName}>Hello Elissa</Text>
         <Text style={styles.welcomeMessage}>Find your perfect job</Text>
       </View>
+      <View style={styles.searchContainer}>
+        <View style={styles.searchWrapper}>
+          <TextInput
+            style={styles.searchInput}
+            value=''
+            onChange={() => {}}
+            placeholder='What are you looking for?'
+          />
+        </View>
+        <TouchableOpacity style={styles.searchBtn} onChange={() => {}}>
+          <Image 
+            source={icons.search}
+            resizeMode='contain'
+            style={styles.searchBtnImage}
+          />
+        </TouchableOpacity>
+      </View>
     </View>
   )
 }
